@@ -121,14 +121,6 @@ public class GoalManager : MonoBehaviour
                 m_VideoPlayerToggle.isOn = false;
         }
 
-        if (m_FadeMaterial != null)
-        {
-            m_FadeMaterial.FadeSkybox(false);
-
-            if (m_PassthroughToggle != null)
-                m_PassthroughToggle.isOn = false;
-        }
-
         if (m_LearnButton != null)
         {
             m_LearnButton.GetComponent<Button>().onClick.AddListener(OpenModal); ;
@@ -153,6 +145,8 @@ public class GoalManager : MonoBehaviour
             m_ObjectSpawner = FindObjectOfType<ObjectSpawner>();
 #endif
         }
+        if (m_FadeMaterial != null)
+            m_FadeMaterial.FadeSkybox(true);
     }
 
     void OpenModal()
@@ -177,14 +171,14 @@ public class GoalManager : MonoBehaviour
     {
         if (!m_AllGoalsFinished)
         {
-            ProcessGoals();
+            //ProcessGoals();
         }
 
         // Debug Input
 #if UNITY_EDITOR
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            CompleteGoal();
+            //CompleteGoal();
         }
 #endif
     }
