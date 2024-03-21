@@ -81,11 +81,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - iChannel0:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: fe887e61dc6134a4f80ddef8a57ca93e, type: 3}
         m_Scale: {x: 1.63, y: 3.54}
         m_Offset: {x: 0, y: 4.75}
     - iChannel1:
-        m_Texture: {fileID: 2800000, guid: 0d77f64dcf23ba448b2a63ad6f4c50c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: fe887e61dc6134a4f80ddef8a57ca93e, type: 3}
         m_Scale: {x: -1.6, y: 4.15}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:

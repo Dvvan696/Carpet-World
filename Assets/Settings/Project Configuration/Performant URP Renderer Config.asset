@@ -75,7 +75,7 @@ MonoBehaviour:
     passTag: View3
     Event: 500
     filterSettings:
-      RenderQueueType: 1
+      RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
         m_Bits: 1024
