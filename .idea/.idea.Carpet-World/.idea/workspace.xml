@@ -1,102 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99826a69-4641-4117-b157-721c0fd19b16" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carpet-World/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carpet-World/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fractal.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fractal.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fractal.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fractal.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV1.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV1.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/CapetV3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Foam Sub Graph.shadersubgraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Foam Sub Graph.shadersubgraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Grainy 10 - 512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Grainy 10 - 512x512.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Grainy 5 - 512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Grainy 5 - 512x512.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Cubenizer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Cubenizer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/CubenizerPunctured.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/CubenizerPunctured.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Hexnizer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Hexnizer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Metaball.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Metaball.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Spherenizer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Materials/Spherenizer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Prefabs/SampleCube.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Prefabs/SampleCube.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Scripts/MetaballEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Scripts/MetaballEntity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Scripts/MetaballRenderer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Scripts/MetaballRenderer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Cubenizer.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Cubenizer.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Cubenizer.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Cubenizer.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/CubenizerPunctured.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/CubenizerPunctured.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Framework.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Framework.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Hexnizer.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Hexnizer.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Hexnizer.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Hexnizer.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/HexnizerDetailed.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/HexnizerDetailed.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Metaball.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Metaball.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/ProceduralModeling.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/ProceduralModeling.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Spherenizer.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ProceduralModeling/Shaders/Spherenizer.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Refraction Sub Graph.shadersubgraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Refraction Sub Graph.shadersubgraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ReversNormal.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/ReversNormal.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/RevertNormal.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/RevertNormal.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Simplex Noise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Simplex Noise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Voroni Noise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Voroni Noise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Water Shader Graph.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Water Shader Graph.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Wave Noise Sub Graph.shadersubgraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/Wave Noise Sub Graph.shadersubgraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/jrmjoedl.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Capet/jrmjoedl.bmp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/DotMATRIX.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/DotMATRIX.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/DotMatrix.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/DotMatrix.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/FlipNormals.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/FlipNormals.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Fractal.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Fractal.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Spawn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Spawn.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Vortex.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Vortex.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Vortex.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Carpet/Vortex.shadergraph.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="99826a69-4641-4117-b157-721c0fd19b16" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,18 +15,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "rider.run.widget.enabled.cache": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\UnityEditor\2022.3.20f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\ForkGit\Carpet-World -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\ForkGit\Carpet-World" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -160,6 +66,7 @@
       <workItem from="1710508004370" duration="1000" />
       <workItem from="1710933226029" duration="1424000" />
       <workItem from="1711014998913" duration="142000" />
+      <workItem from="1711121150974" duration="2358000" />
     </task>
     <servers />
   </component>
