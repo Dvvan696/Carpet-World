@@ -16,6 +16,7 @@ public class DoorOpen : MonoBehaviour
         if (sumAngle >= 80)
         {
             TargetObject.layer = 0;
+            TargetObject.GetComponent<Rigidbody>().isKinematic = false;
             this.enabled = false;
         }
     }
