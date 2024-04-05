@@ -5077,13 +5077,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591125768}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -7.479, y: 2.233, z: -4.049}
+  m_LocalRotation: {x: -0.31018978, y: 0.63543874, z: 0.6354387, w: 0.31018975}
+  m_LocalPosition: {x: -10.39, y: 2.233, z: -4.762}
   m_LocalScale: {x: 7.333529, y: 7.3335276, z: 7.3335276}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 633366998}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 127.961}
 --- !u!114 &591125770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5545,8 +5545,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633366997}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9946144, z: -0, w: -0.10364467}
-  m_LocalPosition: {x: -5.175, y: -0.5749999, z: -3.401}
+  m_LocalRotation: {x: -0, y: 0.038612563, z: -0, w: -0.9992543}
+  m_LocalPosition: {x: 6.0248246, y: -0.5749999, z: 4.1474433}
   m_LocalScale: {x: 0.6818, y: 0.6818, z: 0.6818}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5564,7 +5564,7 @@ Transform:
   - {fileID: 533468756}
   - {fileID: 70044488}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -191.898, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -364.426, z: 0}
 --- !u!1001 &641909849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9082,7 +9082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4959373
+      value: -10.405
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9090,7 +9090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7865164
+      value: -5.104
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912220, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17560,7 +17560,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.5, z: -0.5}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.15417099, y: 0.96270734, z: 0.99730325}
+  m_ConnectedAnchor: {x: -0.04656601, y: 0.9627074, z: 1.0660439}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -17869,7 +17869,7 @@ GameObject:
   - component: {fileID: 3693273451654305582}
   - component: {fileID: 5385308113201078704}
   - component: {fileID: 4592115646652579183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Phantom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18859,7 +18859,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 455ef821a5429de4baeed61fa958acbc, type: 2}
+  - {fileID: 2100000, guid: 374aaa8506933b04c9d6b36b28d4829c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
