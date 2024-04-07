@@ -14,9 +14,7 @@ public class ValveController : MonoBehaviour
     private void Update()
     {
         Color color = _renderer.GetColor("_InColor");
-        print("OLD " + color);
         color = new Color(R?Remap(_hingeJoint.angle):color.r, G?Remap(_hingeJoint.angle):color.g, B?Remap(_hingeJoint.angle):color.b);
-        print("New " + color);
         _renderer.SetColor("_InColor", color);
     }
     

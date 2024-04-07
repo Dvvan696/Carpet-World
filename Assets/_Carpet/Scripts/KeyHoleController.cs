@@ -11,26 +11,41 @@ public class KeyHoleController : MonoBehaviour
     [SerializeField] private Material invisibleMaterial;
     [SerializeField] private GameObject keyMove;
     
-    private void OnTriggerStay(Collider other)
+    protected virtual Renderer GetRenderer()
+    {
+        return keyRenderer;
+    }
+
+    protected virtual void SetUpPart(GameObject other)
+    {
+        keyMove.SetActive(true);
+        Destroy(other.gameObject);
+        Destroy(GetRenderer().gameObject);
+        this.enabled = false;
+    }
+
+    protected void CheckPosition(GameObject other)
     {
         if (other.CompareTag("Key"))
         {
-            keyRenderer.material = visibleMaterial;
+            GetRenderer().material = visibleMaterial;
             if (Vector3.Distance(other.transform.position, this.transform.position) <= 0.06f)
             {
-                keyMove.SetActive(true);
-                Destroy(other.gameObject);
-                Destroy(keyRenderer.gameObject);
-                this.enabled = false;
+                SetUpPart(other);
             }
         }
+    }
+    
+    private void OnTriggerStay(Collider other)
+    {
+        CheckPosition(other.gameObject);
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Key"))
         {
-            keyRenderer.material = invisibleMaterial;
+            GetRenderer().material = invisibleMaterial;
         }
     }
 }

@@ -12,7 +12,6 @@ public class DoorOpen : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         var sumAngle = LeftDoor.angle + RightDoor.angle * -1;
-        print(sumAngle);
         if (sumAngle >= 80)
         {
             TargetObject.layer = 0;
