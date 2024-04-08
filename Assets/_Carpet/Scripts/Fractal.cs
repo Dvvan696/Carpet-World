@@ -89,7 +89,7 @@ public class Fractal : MonoBehaviour {
 		transform.parent = parent.transform;
 		transform.localScale = Vector3.one * childScale;
 		transform.localPosition =
-			childDirections[childIndex] * (0.5f + 0.5f * childScale);
+			childDirections[childIndex] * (0.3f + 0.3f * childScale);
 		transform.localRotation = childOrientations[childIndex];
 	}
 
