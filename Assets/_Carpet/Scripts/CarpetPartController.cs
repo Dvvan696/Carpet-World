@@ -14,14 +14,10 @@ public class CarpetPartController : KeyHoleController
     protected override void SetUpPart(GameObject other)
     {
         other.GetComponent<Bounce>().enabled = false;
-        other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        other.GetComponent<Rigidbody2D>().freezeRotation = true;
+        other.GetComponent<Rigidbody>().velocity = Vector2.zero;
+        other.GetComponent<Rigidbody>().freezeRotation = true;
         other.gameObject.transform.localPosition = Vector3.zero;
         other.gameObject.transform.localRotation = Quaternion.Euler(0,0,0);
         Destroy(this.gameObject);
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        CheckPosition(other.gameObject);
     }
 }

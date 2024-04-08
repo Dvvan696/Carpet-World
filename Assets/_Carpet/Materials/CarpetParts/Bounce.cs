@@ -6,37 +6,38 @@ using Random = UnityEngine.Random;
 
 public class Bounce : MonoBehaviour
 {
-    private Rigidbody2D _rb2d;
+    private Rigidbody _rb;
+    [SerializeField] private bool up;
     
 
     void StartBounce()
     {
-        float rand = Random.Range(0, 2);
-        if (rand <= 1)
+        //int rand = Random.Range(0, 10);
+        if (up)
         {
-            _rb2d.AddForce(new Vector2(0.0000002f,-0.00000015f));
+            _rb.AddForce(new Vector3(0.0000002f,0.00000015f,0));
         }
         else
         {
-            _rb2d.AddForce(new Vector2(-0.0000002f,-0.00000015f));
+            _rb.AddForce(new Vector3(-0.0000002f,-0.00000015f,0));
         }
     }
     void Start()
     {
-        _rb2d = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody>();
         Invoke("StartBounce",2);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_rb2d.velocity.x <= 0.01f && _rb2d.velocity.x >= -0.01f)
+        if (_rb.velocity.x <= 0.025f && _rb.velocity.x >= -0.025f)
         {
-            _rb2d.velocity = new Vector2(Random.Range(0.5f, 1.5f), _rb2d.velocity.y);
+            _rb.velocity = new Vector3(Random.Range(0.5f, 1.5f), _rb.velocity.y,0);
         }
-        else if (_rb2d.velocity.y <= 0.01f && _rb2d.velocity.y >= -0.01f)
+        else if (_rb.velocity.y <= 0.025f && _rb.velocity.y >= -0.025f)
         {
-            _rb2d.velocity = new Vector2(_rb2d.velocity.x, Random.Range(0.5f, 1.5f));
+            _rb.velocity = new Vector3(_rb.velocity.x, Random.Range(0.5f, 1.5f),0);
         }
     }
 
