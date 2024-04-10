@@ -160,7 +160,7 @@ MonoBehaviour:
     passTag: View2
     Event: 500
     filterSettings:
-      RenderQueueType: 0
+      RenderQueueType: 1
       LayerMask:
         serializedVersion: 2
         m_Bits: 512
