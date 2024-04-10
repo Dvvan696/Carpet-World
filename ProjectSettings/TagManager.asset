@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Key
   - Grab
+  - Top
+  - Bot
+  - Cent
   layers:
   - Default
   - TransparentFX

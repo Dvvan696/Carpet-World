@@ -9,8 +9,10 @@ public class KeyHoleController : MonoBehaviour
     [SerializeField] private MeshRenderer keyRenderer;
     [SerializeField] private Material visibleMaterial;
     [SerializeField] private Material invisibleMaterial;
-    [SerializeField] private GameObject keyMove;
+    [SerializeField] protected GameObject keyMove;
     
+    [SerializeField] private string targetTagName = "Key";
+    [SerializeField] private float distanceTrigger = 0.06f;
     protected virtual Renderer GetRenderer()
     {
         return keyRenderer;
@@ -26,10 +28,10 @@ public class KeyHoleController : MonoBehaviour
 
     protected void CheckPosition(GameObject other)
     {
-        if (other.CompareTag("Key"))
+        if (other.CompareTag(targetTagName))
         {
             GetRenderer().material = visibleMaterial;
-            if (Vector3.Distance(other.transform.position, this.transform.position) <= 0.06f)
+            if (Vector3.Distance(other.transform.position, this.transform.position) <= distanceTrigger)
             {
                 SetUpPart(other);
             }
@@ -43,7 +45,7 @@ public class KeyHoleController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Key"))
+        if (other.CompareTag(targetTagName))
         {
             GetRenderer().material = invisibleMaterial;
         }
