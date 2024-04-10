@@ -10,6 +10,8 @@ public class KeyHoleController : MonoBehaviour
     [SerializeField] private Material visibleMaterial;
     [SerializeField] private Material invisibleMaterial;
     [SerializeField] private GameObject keyMove;
+
+    [SerializeField] private string targetTagKey = "Key";
     
     protected virtual Renderer GetRenderer()
     {
@@ -26,7 +28,7 @@ public class KeyHoleController : MonoBehaviour
 
     protected void CheckPosition(GameObject other)
     {
-        if (other.CompareTag("Key"))
+        if (other.CompareTag(targetTagKey))
         {
             GetRenderer().material = visibleMaterial;
             if (Vector3.Distance(other.transform.position, this.transform.position) <= 0.06f)
@@ -43,7 +45,7 @@ public class KeyHoleController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Key"))
+        if (other.CompareTag(targetTagKey))
         {
             GetRenderer().material = invisibleMaterial;
         }
