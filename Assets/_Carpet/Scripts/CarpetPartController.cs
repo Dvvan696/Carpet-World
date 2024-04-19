@@ -20,6 +20,7 @@ public class CarpetPartController : KeyHoleController
         other.gameObject.transform.localPosition = Vector3.zero;
         other.gameObject.transform.localRotation = Quaternion.Euler(0,0,0);
         other.layer = layer;
+        other.GetComponent<Rigidbody>().isKinematic = true;
         Destroy(this.gameObject);
     }
 }

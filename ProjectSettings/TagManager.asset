@@ -9,6 +9,11 @@ TagManager:
   - Top
   - Bot
   - Cent
+  - part1
+  - part2
+  - part3
+  - part4
+  - Teleport
   layers:
   - Default
   - TransparentFX
