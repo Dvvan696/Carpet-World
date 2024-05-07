@@ -9,6 +9,8 @@ public class CarpetRoomController : MonoBehaviour
     [SerializeField] private GameObject _spawnObject;
 
     [SerializeField] private List<ValveController> _valvesList;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class CarpetRoomController : MonoBehaviour
         if (color.r <= 0.15f && color.b <= 0.15f && color.g <= 0.15f)
         {
             _spawnObject.SetActive(true);
+            QuestController.instance.NextStep();
             foreach (var valve in _valvesList)
             {
                 valve.enabled = false;

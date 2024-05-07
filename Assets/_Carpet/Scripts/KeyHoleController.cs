@@ -10,6 +10,7 @@ public class KeyHoleController : MonoBehaviour
     [SerializeField] private Material visibleMaterial;
     [SerializeField] private Material invisibleMaterial;
     [SerializeField] protected GameObject keyMove;
+   
     
     [SerializeField] private string targetTagName = "Key";
     [SerializeField] private float distanceTrigger = 0.06f;
@@ -24,6 +25,8 @@ public class KeyHoleController : MonoBehaviour
         Destroy(other.gameObject);
         Destroy(GetRenderer().gameObject);
         this.enabled = false;
+        QuestController.instance.NextStep();
+        
     }
 
     protected void CheckPosition(GameObject other)
