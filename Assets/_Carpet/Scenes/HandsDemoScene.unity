@@ -5358,7 +5358,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.2819295, y: 1, z: 0.15000005}
+  m_Size: {x: 2.2819295, y: 1, z: 0.03}
   m_Center: {x: 2.2761796, y: -4.870022, z: 0}
 --- !u!114 &187875718
 MonoBehaviour:
@@ -16351,7 +16351,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.3704903, y: 2.6164622, z: 0.15000005}
+  m_Size: {x: 3.3704903, y: 2.6164622, z: 0.03}
   m_Center: {x: 0.076185174, y: -0.041942243, z: 0}
 --- !u!54 &727351685
 Rigidbody:
@@ -29625,7 +29625,7 @@ Transform:
   m_GameObject: {fileID: 1499802791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2629186, w: 0.96481806}
-  m_LocalPosition: {x: -7.87, y: 0.18, z: 0.10000021}
+  m_LocalPosition: {x: -5.8, y: -1.04, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -29784,7 +29784,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.8708377, y: 1.0365294, z: 0.15000005}
+  m_Size: {x: 3.8708377, y: 1.0365294, z: 0.03}
   m_Center: {x: 6.4646807, y: 3.7617185, z: 0}
 --- !u!114 &1499802802
 MonoBehaviour:
@@ -30983,7 +30983,7 @@ Transform:
   m_GameObject: {fileID: 1578853277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.012915078, w: 0.9999167}
-  m_LocalPosition: {x: 11.26, y: 2.67, z: 0.1}
+  m_LocalPosition: {x: -1.69, y: 3.01, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31073,7 +31073,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.165723, y: 1.2827435, z: 0.15000005}
+  m_Size: {x: 2.165723, y: 1.2827435, z: 0.03}
   m_Center: {x: -5.107523, y: 0.0037770923, z: 0}
 --- !u!54 &1578853284
 Rigidbody:
@@ -42559,13 +42559,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3113582726696116337}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 5982963534685165758, guid: b08aa487cadd25e48bd9a7c9c00d7680, type: 3}
-  m_DetectionMode: 1
+  m_DetectionMode: -1
 --- !u!4 &3154726581514219159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9171031756790316709, guid: f5afcb7f49afad5419049090809f5cc7, type: 3}
