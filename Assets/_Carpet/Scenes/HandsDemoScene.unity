@@ -25758,6 +25758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268903166}
   - component: {fileID: 1268903167}
+  - component: {fileID: 1268903168}
   m_Layer: 0
   m_Name: PuzzleCarpet
   m_TagString: Untagged
@@ -25812,6 +25813,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1268903168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268903165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077b3f1fdc025a743a93933af89f6704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 1927823341}
+  - {fileID: 1296886811}
+  - {fileID: 1884260415}
+  - {fileID: 2050375578}
+  EndMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &1270270766
 GameObject:
   m_ObjectHideFlags: 0
