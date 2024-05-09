@@ -14,6 +14,7 @@ TagManager:
   - part3
   - part4
   - Teleport
+  - projectile
   layers:
   - Default
   - TransparentFX
@@ -31,8 +32,8 @@ TagManager:
   - 2Part2
   - 3Part3
   - 4Part4
-  - 
-  - 
+  - LeftHand Physics
+  - RightHand Physics
   - 
   - 
   - 
