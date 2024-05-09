@@ -20,6 +20,17 @@ public class KeyMoveController : MonoBehaviour
             RightDoor.limits = a;
             Key.GetComponent<BoxCollider>().enabled = false;
             this.enabled = false;
+
+            LeftDoor.GetComponent<Rigidbody>().isKinematic = false;
+            RightDoor.GetComponent<Rigidbody>().isKinematic = false;
+            
+            LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            LeftDoor.GetComponent<Rigidbody>().freezeRotation = false;
+            LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+        
+            RightDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            RightDoor.GetComponent<Rigidbody>().freezeRotation = false;
+            RightDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
         }
     }
 }
