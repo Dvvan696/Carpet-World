@@ -17,6 +17,7 @@ public class DoorOpen : MonoBehaviour
             TargetObject.layer = 0;
             TargetObject.GetComponent<Rigidbody>().isKinematic = false;
             this.enabled = false;
+            Destroy(this.gameObject, 10);
         }
     }
 }

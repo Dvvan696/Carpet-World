@@ -12,6 +12,8 @@ public class KeyMoveController : MonoBehaviour
     {
         if (Key.angle >= 85)
         {
+            LeftDoor.GetComponent<Rigidbody>().isKinematic = false;
+            RightDoor.GetComponent<Rigidbody>().isKinematic = false;
             JointLimits a = new JointLimits();
             a.max = 90;
             LeftDoor.limits = a;
@@ -21,9 +23,6 @@ public class KeyMoveController : MonoBehaviour
             Key.GetComponent<BoxCollider>().enabled = false;
             this.enabled = false;
 
-            LeftDoor.GetComponent<Rigidbody>().isKinematic = false;
-            RightDoor.GetComponent<Rigidbody>().isKinematic = false;
-            
             LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             LeftDoor.GetComponent<Rigidbody>().freezeRotation = false;
             LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;

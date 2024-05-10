@@ -13,7 +13,7 @@ public class DoorBlocker : MonoBehaviour
         {
             Door.breakForce = 0.001f;
             Door.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            Door.GetComponent<Rigidbody>().AddForce(Vector3.right * 10f, ForceMode.Impulse);
+            Door.GetComponent<Rigidbody>().AddForce(Vector3.right * 50f);
             Destroy(Door.gameObject, 2f);
         }
     }
