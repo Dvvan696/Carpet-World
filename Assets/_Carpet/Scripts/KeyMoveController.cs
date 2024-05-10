@@ -25,11 +25,11 @@ public class KeyMoveController : MonoBehaviour
 
             LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             LeftDoor.GetComponent<Rigidbody>().freezeRotation = false;
-            LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            LeftDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
         
             RightDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             RightDoor.GetComponent<Rigidbody>().freezeRotation = false;
-            RightDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            RightDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
         }
     }
 }

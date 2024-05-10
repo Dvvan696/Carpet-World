@@ -23,14 +23,13 @@ public class PuzzleSolve : MonoBehaviour
 
     private IEnumerator Solve()
     {
-        print(transform.childCount);
             if (transform.childCount == 8)
             {
-
-                _animator.SetBool("Solved", true);
-                yield return new WaitForSeconds(1.5f);
-                _animator.enabled = false;
                 isSolved = true;
+                _animator.SetBool("Solved", true);
+                yield return new WaitForSeconds(1.5f);//1.5
+                _animator.enabled = false;
+                
             }
 
     }

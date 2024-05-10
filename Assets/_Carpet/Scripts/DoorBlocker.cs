@@ -9,12 +9,12 @@ public class DoorBlocker : MonoBehaviour
 
     private void Update()
     {
-        if (Mathf.Abs(Door.angle) >= 89)
+        if (Mathf.Abs(Door.angle) >= 85)
         {
             Door.breakForce = 0.001f;
             Door.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            Door.GetComponent<Rigidbody>().AddForce(Vector3.right * 50f);
-            Destroy(Door.gameObject, 2f);
+            Door.GetComponent<Rigidbody>().AddForce(Vector3.right * 500f);
+            Destroy(Door.gameObject, 10f);
         }
     }
 }
