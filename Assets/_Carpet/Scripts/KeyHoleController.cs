@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.MPE;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class KeyHoleController : MonoBehaviour
 {
@@ -14,6 +16,22 @@ public class KeyHoleController : MonoBehaviour
     
     [SerializeField] private string targetTagName = "Key";
     [SerializeField] private float distanceTrigger = 0.06f;
+    
+    [SerializeField] private float _setUpTimerConst = 3f;
+    private float _setUpTimer;
+    private bool _TmStart = false;
+
+    private void Update()
+    {
+        if (_TmStart)
+            _setUpTimer -= Time.deltaTime;
+        else
+            _setUpTimer = _setUpTimerConst;
+
+
+
+    }
+
     protected virtual Renderer GetRenderer()
     {
         return keyRenderer;
@@ -34,13 +52,24 @@ public class KeyHoleController : MonoBehaviour
         if (other.CompareTag(targetTagName))
         {
             GetRenderer().material = visibleMaterial;
-            if (Vector3.Distance(other.transform.position, this.transform.position) <= distanceTrigger)
-            {
+            
+            if(_setUpTimer<=0)
                 SetUpPart(other);
-            }
+           
         }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(targetTagName))
+        {
+            GetRenderer().material = invisibleMaterial;
+            _TmStart = true;
+            print(_TmStart);
+        }
+    }
+
+
     private void OnTriggerStay(Collider other)
     {
         CheckPosition(other.gameObject);
@@ -51,6 +80,7 @@ public class KeyHoleController : MonoBehaviour
         if (other.CompareTag(targetTagName))
         {
             GetRenderer().material = invisibleMaterial;
+            _TmStart = false;
         }
     }
 }
