@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using HurricaneVR.Framework.Components;
 using UnityEngine;
 
 public class ValveController : MonoBehaviour
@@ -10,6 +11,9 @@ public class ValveController : MonoBehaviour
     [SerializeField] private bool G;
     [SerializeField] private bool B;
     [SerializeField] private HingeJoint _hingeJoint;
+    private float a = 0;
+
+    public HVRRotationTracker Tracker;
 
     private float oldAngle { get; set; }
 
@@ -20,6 +24,40 @@ public class ValveController : MonoBehaviour
 
     private void Update()
     {
+        if (Tracker)
+        {
+            print(Tracker.Angle);
+            a = Tracker.Angle;
+            
+            if (Math.Abs(oldAngle - _hingeJoint.angle) < 0.1f)
+            {
+                Color color = _renderer.GetColor("_InColor");
+                color = new Color(
+                    R ?
+                        color.r >= 0 ?
+                            color.r >= 1 ?
+                                .9f :
+                                color.r + Remap(Tracker.Angle) : //-361 361
+                            0.1f :
+                        color.r,
+                    G ?
+                        color.g >= 0 ?
+                            color.g >= 1 ?
+                                .9f :
+                                color.g + Remap(_hingeJoint.angle) :
+                            0.1f :
+                        color.g,
+                    B ?
+                        color.b >= 0 ? 
+                            color.b >= 1 ? 
+                                .9f : 
+                                color.b + Remap(_hingeJoint.angle) : 
+                            0.1f : 
+                        color.b);
+                _renderer.SetColor("_InColor", color);
+                return;
+            }
+        }
         if (Math.Abs(oldAngle - _hingeJoint.angle) < 0.1f)
         {
             Color color = _renderer.GetColor("_InColor");
