@@ -31,13 +31,13 @@ public class Bounce : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_rb.velocity.x <= 0.025f && _rb.velocity.x >= -0.025f)
+        if (_rb.velocity.x <= 0.05f && _rb.velocity.x >= -0.05f)
         {
-            _rb.velocity = new Vector3(Random.Range(0.5f, 1.5f), _rb.velocity.y,0);
+            _rb.velocity = new Vector3(Random.Range(-1.5f, 1.5f), _rb.velocity.y,0);
         }
-        else if (_rb.velocity.y <= 0.025f && _rb.velocity.y >= -0.025f)
+        else if (_rb.velocity.y <= 0.05f && _rb.velocity.y >= -0.05f)
         {
-            _rb.velocity = new Vector3(_rb.velocity.x, Random.Range(0.5f, 1.5f),0);
+            _rb.velocity = new Vector3(_rb.velocity.x, Random.Range(-1.5f, 1.5f),0);
         }
     }
 
