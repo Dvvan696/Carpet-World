@@ -10,7 +10,7 @@ public class KeyMoveController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Key.angle >= 85)
+        if (Key.angle >= 80)
         {
             LeftDoor.GetComponent<Rigidbody>().isKinematic = false;
             RightDoor.GetComponent<Rigidbody>().isKinematic = false;
