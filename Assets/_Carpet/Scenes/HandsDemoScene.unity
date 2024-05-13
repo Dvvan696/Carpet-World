@@ -4681,7 +4681,7 @@ Transform:
   m_GameObject: {fileID: 187875710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.011082653, w: 0.9999386}
-  m_LocalPosition: {x: 3.03, y: 7.91, z: 0.1}
+  m_LocalPosition: {x: 2.58, y: 1.18, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4741,7 +4741,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: fe7e678d00214aa4eaa13931d2a9d145, type: 3}
+  m_Sprite: {fileID: 1297197931, guid: fe7e678d00214aa4eaa13931d2a9d145, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5428,8 +5428,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 2.853446}
+  m_Center: {x: 0, y: 0, z: 0.92672193}
 --- !u!1001 &210358768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10335,8 +10335,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.4331317}
+  m_Center: {x: 0, y: 0, z: 1.2165653}
 --- !u!224 &448506027 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 195190420563360910, guid: 6a448845c7017044e8a9f3d711cfe825, type: 3}
@@ -10728,8 +10728,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9999998, y: 1, z: 2.0216024}
-  m_Center: {x: 0, y: 0, z: 0.51079774}
+  m_Size: {x: 0.9999998, y: 1, z: 4.072335}
+  m_Center: {x: 0, y: 0, z: 1.5361629}
 --- !u!1001 &486341789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11531,8 +11531,8 @@ MonoBehaviour:
   invisibleMaterial: {fileID: 2100000, guid: 455ef821a5429de4baeed61fa958acbc, type: 2}
   keyMove: {fileID: 963913259}
   targetTagName: Teleport
-  distanceTrigger: 0.06
-  _setUpTimerConst: 5
+  distanceTrigger: 0.07
+  _setUpTimerConst: 0
 --- !u!65 &533468760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16497,7 +16497,7 @@ Transform:
   m_GameObject: {fileID: 727351680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.26652485, w: 0.9638281}
-  m_LocalPosition: {x: -0.83, y: -3.91, z: 0.10000021}
+  m_LocalPosition: {x: 4.82, y: -2.01, z: 0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -16544,7 +16544,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8f4f626049622784db8b596ba3cb2e91, type: 3}
+  m_Sprite: {fileID: -1461487538, guid: 8f4f626049622784db8b596ba3cb2e91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -22730,8 +22730,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 2.3482192}
+  m_Center: {x: 0, y: 0, z: 0.67410946}
 --- !u!1001 &1072431228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27296,7 +27296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00472
+      value: 0.00578
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27304,23 +27304,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00032
+      value: -0.00012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5205703
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5205703
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.47854632
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.47854632
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27332,7 +27332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -85.183
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed0edfdd925cd8e468e914e2dcf4b844, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -28247,7 +28247,7 @@ MonoBehaviour:
   keyMove: {fileID: 187875710}
   targetTagName: part2
   distanceTrigger: 0.12
-  _setUpTimerConst: 5
+  _setUpTimerConst: 3
   partRenderer: {fileID: 1296886811}
   layer: 14
   carpetSprite: {fileID: 1297197931, guid: fe7e678d00214aa4eaa13931d2a9d145, type: 3}
@@ -30219,7 +30219,7 @@ MonoBehaviour:
   keyMove: {fileID: 2807966111282831967}
   targetTagName: Key
   distanceTrigger: 0.06
-  _setUpTimerConst: 5
+  _setUpTimerConst: 0
 --- !u!135 &1437958792
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31571,7 +31571,7 @@ Transform:
   m_GameObject: {fileID: 1499802791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.267827, w: 0.96346706}
-  m_LocalPosition: {x: -11.18, y: 2.22, z: 0.27}
+  m_LocalPosition: {x: -6.51, y: 1.44, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -31631,7 +31631,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 7cfc508af46eec346b874533506e78b8, type: 3}
+  m_Sprite: {fileID: -1669510940, guid: 7cfc508af46eec346b874533506e78b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -33391,7 +33391,7 @@ Transform:
   m_GameObject: {fileID: 1578853277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.012915078, w: 0.9999167}
-  m_LocalPosition: {x: 10.92, y: -0.55, z: 0.17}
+  m_LocalPosition: {x: 5.93, y: 0.77, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33451,7 +33451,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 3fd32af8db2762b418d80bb9274e4a54, type: 3}
+  m_Sprite: {fileID: 1406189178, guid: 3fd32af8db2762b418d80bb9274e4a54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -38568,7 +38568,7 @@ MonoBehaviour:
   keyMove: {fileID: 1578853277}
   targetTagName: part3
   distanceTrigger: 0.12
-  _setUpTimerConst: 5
+  _setUpTimerConst: 3
   partRenderer: {fileID: 1884260415}
   layer: 13
   carpetSprite: {fileID: 1406189178, guid: 3fd32af8db2762b418d80bb9274e4a54, type: 3}
@@ -39297,7 +39297,7 @@ MonoBehaviour:
   keyMove: {fileID: 1499802791}
   targetTagName: part1
   distanceTrigger: 0.1
-  _setUpTimerConst: 5
+  _setUpTimerConst: 3
   partRenderer: {fileID: 1927823341}
   layer: 15
   carpetSprite: {fileID: -1669510940, guid: 7cfc508af46eec346b874533506e78b8, type: 3}
@@ -41586,7 +41586,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.7599, y: 0.73384315, z: 0.35378617}
   m_Center: {x: -8.961723, y: 2.6160955, z: -4.7977366}
@@ -41878,7 +41878,7 @@ MonoBehaviour:
   keyMove: {fileID: 727351680}
   targetTagName: part4
   distanceTrigger: 0.1
-  _setUpTimerConst: 5
+  _setUpTimerConst: 3
   partRenderer: {fileID: 2050375578}
   layer: 12
   carpetSprite: {fileID: -1461487538, guid: 8f4f626049622784db8b596ba3cb2e91, type: 3}
@@ -46260,7 +46260,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.51774645, y: 1.1329869, z: 0.6838236}
+  m_ConnectedAnchor: {x: 0.5230794, y: 1.1329869, z: 0.6830368}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -46487,7 +46487,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 94
   m_CollisionDetection: 0
 --- !u!114 &4465066405845697424
 MonoBehaviour:

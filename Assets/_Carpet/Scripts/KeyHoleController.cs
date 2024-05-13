@@ -1,10 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor.MPE;
+
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class KeyHoleController : MonoBehaviour
 {
@@ -53,7 +48,7 @@ public class KeyHoleController : MonoBehaviour
         {
             GetRenderer().material = visibleMaterial;
             
-            if(_setUpTimer<=0)
+            if(_setUpTimer<=0 || Vector3.Distance(other.transform.position, this.transform.position) <= distanceTrigger)
                 SetUpPart(other);
            
         }
