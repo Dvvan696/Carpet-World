@@ -36,7 +36,8 @@ public class KeyHoleController : MonoBehaviour
     {
         keyMove.SetActive(true);
         Destroy(other.gameObject);
-        Destroy(GetRenderer().gameObject);
+        if(targetTagName != "Key")
+            Destroy(GetRenderer().gameObject);
         this.enabled = false;
         QuestController.instance.NextStep();
         
