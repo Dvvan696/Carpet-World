@@ -3,7 +3,12 @@ guid: 69ab53823a102274d92c1a7b83d156dd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ARRoom: {instanceID: 0}
+  - normalRoom: {instanceID: 0}
+  - teleportPosition: {instanceID: 0}
+  - player: {instanceID: 0}
+  - FadeMat: {fileID: 5321554069656881318, guid: 09483d6fb69d11d48b78d9ec5dbdc9ea, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
