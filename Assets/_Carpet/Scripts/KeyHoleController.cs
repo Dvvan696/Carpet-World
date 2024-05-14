@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public class KeyHoleController : MonoBehaviour
@@ -13,18 +14,15 @@ public class KeyHoleController : MonoBehaviour
     [SerializeField] private float distanceTrigger = 0.06f;
     
     [SerializeField] private float _setUpTimerConst = 3f;
+    [SerializeField] private bool _isDelete;
     private float _setUpTimer;
     private bool _TmStart = false;
+
 
     private void Update()
     {
         if (_TmStart)
             _setUpTimer -= Time.deltaTime;
-        else
-            _setUpTimer = _setUpTimerConst;
-
-
-
     }
 
     protected virtual Renderer GetRenderer()
@@ -34,12 +32,11 @@ public class KeyHoleController : MonoBehaviour
 
     protected virtual void SetUpPart(GameObject other)
     {
-        keyMove.SetActive(true);
         Destroy(other.gameObject);
-        if(targetTagName != "Key")
-            Destroy(GetRenderer().gameObject);
-        this.enabled = false;
+        keyMove.SetActive(true);
         QuestController.instance.NextStep();
+        Destroy(GetRenderer().gameObject);
+        this.enabled = false;
         
     }
 
@@ -48,10 +45,15 @@ public class KeyHoleController : MonoBehaviour
         if (other.CompareTag(targetTagName))
         {
             GetRenderer().material = visibleMaterial;
-            
-            if(_setUpTimer<=0 || Vector3.Distance(other.transform.position, this.transform.position) <= distanceTrigger)
+
+            if (_setUpTimer <= 0 ||
+                Vector3.Distance(other.transform.position, this.transform.position) <= distanceTrigger)
+            {
+                _TmStart = false;
+                _setUpTimer = _setUpTimerConst;
                 SetUpPart(other);
-           
+            }
+
         }
     }
 
@@ -59,9 +61,7 @@ public class KeyHoleController : MonoBehaviour
     {
         if (other.CompareTag(targetTagName))
         {
-            GetRenderer().material = invisibleMaterial;
             _TmStart = true;
-            print(_TmStart);
         }
     }
 
@@ -77,6 +77,7 @@ public class KeyHoleController : MonoBehaviour
         {
             GetRenderer().material = invisibleMaterial;
             _TmStart = false;
+            _setUpTimer = _setUpTimerConst;
         }
     }
 }

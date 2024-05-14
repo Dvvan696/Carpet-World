@@ -13,25 +13,27 @@ public class TripController : MonoBehaviour
     
     [SerializeField] private GameObject player;
 
+    public GameObject key;
+
    
     Coroutine m_FadeCoroutine;
     [SerializeField] private GameObject FadeMat;
     [SerializeField] private GameObject Tip;
     [SerializeField] private float speed;
 
-
+    public void OnKey()
+    {
+        key.SetActive(true);
+    }
 
     public void GoToTrip()
     {
         QuestController.instance.NextStep();
-        ARRoom.SetActive(true);
-        player.transform.position = teleportPosition.position;
-        normalRoom.SetActive(false);
-        
+
         if (m_FadeCoroutine != null)
             StopCoroutine(m_FadeCoroutine);
 
-        m_FadeCoroutine =StartCoroutine(Fade());
+        m_FadeCoroutine = StartCoroutine(Fade());
     }
     
     
@@ -47,8 +49,12 @@ public class TripController : MonoBehaviour
             yield return null;
         }
         rend.material.SetFloat("_Alpha", 1f);
+        
+        ARRoom.SetActive(true);
+        player.transform.position = teleportPosition.position;
+        normalRoom.SetActive(false);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         
         while (rend.material.GetFloat("_Alpha") > 0f)
             {

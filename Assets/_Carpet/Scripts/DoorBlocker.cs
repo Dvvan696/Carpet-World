@@ -19,9 +19,9 @@ public class DoorBlocker : MonoBehaviour
 
     private void Update()
     {
-        
 
-        if (Mathf.Abs(Door.angle) >= 89)
+
+        if (Door && Mathf.Abs(Door.angle) >= 89)
         {
             Door.breakForce = 0.001f;
             Door.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
@@ -29,27 +29,28 @@ public class DoorBlocker : MonoBehaviour
             Destroy(Door.gameObject, 10f);
             StartCoroutine(DissolveCor());
         }
-        
+
     }
 
     IEnumerator DissolveCor()
     {
-       
+
         yield return new WaitForSeconds(3f);
 
 
 
-            float counter = 0;
-            while (MeshesMat[0].GetFloat("_DissolveAmount") < 1)
-            {
-                counter += dissRate;
-                
-                    MeshesMat[0].SetFloat("_DissolveAmount", counter);
+        float counter = 0;
+        while (MeshesMat[0].GetFloat("_DissolveAmount") < 1)
+        {
+            counter += dissRate;
+
+            MeshesMat[0].SetFloat("_DissolveAmount", counter);
 
 
-                yield return new WaitForSeconds(refreshRate);
-            }
+            yield return new WaitForSeconds(refreshRate);
         }
     }
+}
+
     
 

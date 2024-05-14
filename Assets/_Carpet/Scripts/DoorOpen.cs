@@ -9,15 +9,18 @@ public class DoorOpen : MonoBehaviour
     [SerializeField] private HingeJoint RightDoor;
     [SerializeField] private GameObject TargetObject;
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
-        var sumAngle = LeftDoor.angle + RightDoor.angle * -1;
-        if (sumAngle >= 80)
+        if (LeftDoor && RightDoor)
         {
-            TargetObject.layer = 0;
-            TargetObject.GetComponent<Rigidbody>().isKinematic = false;
-            this.enabled = false;
-            Destroy(this.gameObject, 10);
+            var sumAngle = LeftDoor.angle + RightDoor.angle * -1;
+            if (sumAngle >= 80)
+            {
+                TargetObject.layer = 0;
+                TargetObject.GetComponent<Rigidbody>().isKinematic = false;
+                this.enabled = false;
+                Destroy(this.gameObject, 10);
+            }
         }
     }
 }
