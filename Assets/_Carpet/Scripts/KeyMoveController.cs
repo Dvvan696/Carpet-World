@@ -8,7 +8,7 @@ public class KeyMoveController : MonoBehaviour
     [SerializeField] private HingeJoint LeftDoor;
     [SerializeField] private HingeJoint RightDoor;
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
         if (Key.angle >= 80)
         {
