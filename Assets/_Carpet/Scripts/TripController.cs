@@ -36,6 +36,56 @@ public class TripController : MonoBehaviour
         m_FadeCoroutine = StartCoroutine(Fade());
     }
     
+    public void GoToHome()
+    {
+        QuestController.instance.NextStep();
+
+        if (m_FadeCoroutine != null)
+            StopCoroutine(m_FadeCoroutine);
+
+        m_FadeCoroutine = StartCoroutine(Fade2());
+    }
+    
+    public IEnumerator Fade2()
+    {
+        Renderer rend = FadeMat.transform.GetComponent<Renderer>();
+        float alphaValue = rend.material.GetFloat("_Alpha");
+
+        while (rend.material.GetFloat("_Alpha") < 1f)
+        {
+            alphaValue += Time.deltaTime / speed;
+            rend.material.SetFloat("_Alpha", alphaValue);
+            yield return null;
+        }
+        rend.material.SetFloat("_Alpha", 1f);
+        
+        ARRoom.SetActive(false);
+        player.transform.position = Vector3.zero;
+        normalRoom.SetActive(true);
+        
+
+        yield return new WaitForSeconds(1f);
+        
+        while (rend.material.GetFloat("_Alpha") > 0f)
+        {
+            alphaValue -= Time.deltaTime / speed;
+            rend.material.SetFloat("_Alpha", alphaValue);
+            yield return null;
+        }
+        rend.material.SetFloat("_Alpha", 0f);
+            
+        
+            
+        Tip.SetActive(true);
+            
+        yield return new WaitForSeconds(15f);
+            
+        Tip.SetActive(false);
+        
+           
+        
+    }
+    
     
     public IEnumerator Fade()
     {

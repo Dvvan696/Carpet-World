@@ -29,8 +29,8 @@ public class QuestController : MonoBehaviour
 
     public void NextStep()
     {
-        info.GetComponent<Text>().text = questLog[_current];
         _current++;
+        info.GetComponent<Text>().text = questLog[_current];
     }
 
 }
